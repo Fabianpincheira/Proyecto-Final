@@ -5,44 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Certificacion Desarrollo Web" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/registro.js"></script>
+    <script src="js/mensaje.js"></script>
     <script src="js/validar.js"></script>
-    
+
     <title>Proyecto Final - Escalab</title>
     
 </head>
 
 <body>
-    <!-- Pagina Principal de inicio -->
+    <!-- Titulo Principal de inicio -->
    
     <header class="cabecera">
         <nav class="menu">
             <a class="logo" href="index.html" target="_blank"><img src="image/naturaleza.png" alt="Logo" height="60px"></a>
             <ul class="link-menu">
-                <il><a class="link" href="">Alojaminetos</a></il>
-                <il><a class="link" href="">Contacto</a></il>
-                <il><a class="link cta-btn" href="">Registrarme</a></li>
+                <il><a class="link" href="#lugares">Alojamientos</a></il>
+                <il><a class="link" href="#productos">Lugares </a></il>
+                <il><a class="link cta-btn" href="#contactos">Registrarme</a></li>
+ 
             </ul>
         </nav>
+
     <!-- Introduccion a  pagina-->
+
         <section class="seccion-principal">
             <hgroup>
                 <h1 class="titulo-principal"><span class="titulo-principal">Solicita nuestros Servicios y Disfruta.</span> </h1>
                 <h3 class="titutlo-descripcion">En medio de la naturaleza. <br><br> </h3>
                 <p class="subtitulo-descripcion2"> Hazte socio con nosotros.</a>            
-                <p class="btn-titulo" href="http://" target="_blank">¡Inspirate!</a>
+                <p class="btn-titulo" href="" target="_blank" onclick=" return mensajeAlerta()">¡Inspirate!</a>
             </hgroup>
          
         </section>
     </header>
     
     <!-- Contenido -->
+
     <main>
         <!-- Lugares -->
-        <section class="seccion-articulos">
+
+        <section class="seccion-articulos" id="lugares">
             <h1 class="titulo-servicios">Descubre destinos cerca de ti.</h1>
             <div class="contenedor">
                 <article class="articulos-servicios">
@@ -68,9 +75,9 @@
             </div>
         </section>
 
-        <!-- Beneficios -->
+        <!-- Reserva servicio -->
 
-        <section class="seccion-productos">
+        <section class="seccion-productos" id="productos">
             <div class="contenedor2">
                 <h1 class="titulo-producto">Vive donde quieres</h1>
                 <div class="contenedor-producto">
@@ -100,8 +107,10 @@
         
             </figure> 
         </section>
-        <!--    Hazte socio -->
-        <section class="seccion-contacto">
+
+        <!--    Formulario registro -->
+
+        <section class="seccion-contacto" id="contactos">
             <h1 class="titulo-contacto">Ingresa tus datos y hazte anfitrion. </h1>
 
             <form action="" class="form"  id="formulario"> 
@@ -114,7 +123,7 @@
                     <p id="msgCorreo" class="alerta"></p>
                 </div>
                 <div class="container-contacto">
-                    <input class="caja-formuario" type="number"  id="telefono"  placeholder="Ingresa tu teléfono.">
+                    <input class="caja-formuario" type="tel"  id="telefono"  placeholder="Ingresa tu teléfono.">
                     <p id="msgTelefono" class="alerta"></p>
                 </div>
 
@@ -124,14 +133,16 @@
                 </div>
          
                 <div class="container-comentario">
-                    <textarea class="caja-comentario" name="caja-contacto" id="descripcion" cols="30" rows="10" placeholder="Déjanos tu comentario..." minlength="10" maxlength="200"></textarea>
+                    <textarea class="caja-comentario" name="caja-contacto" id="descripcion"  placeholder="Déjanos tu comentario..." ></textarea>
                     <p id="msgDescripcion" class="alerta"></p>
                 </div>
                 <button  class="btn-enviar" type="button" value="submit" onclick="validacion()">Enviar</button>
             </form>
         </section>
     </main>
-    <!-- Footer -->
+
+    <!-- Pie de pagina -->
+
     <footer class="pie-pagina">
         <h6 class="copy">© 2021 Desarroladores, Inc.Privacidad·Condiciones·Mapa del sitio·Datos de la empresa.</h6>
     </footer>

@@ -61,8 +61,7 @@ function validacion(){
             console.log(datos);
         } 
 
-        
-     
+        //FINALMENTE GUARDO LOS DATOS EN MI OBJETO
      
 
   

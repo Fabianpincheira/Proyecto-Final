@@ -1,8 +1,8 @@
-/*PANTALLA TELEVISOR */
+/*PANTALLA ESCRITORIO GRANDE */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
     .menu{
-        width: 1400px;
+        width: 1440px;
     }
     nav ul il a{
         padding: 10px;
@@ -14,7 +14,7 @@
     }
 
     .seccion-principal{
-        width: 1400px;
+        width: 1440px;
         padding: 10px;
         display: block !important;
        
@@ -46,7 +46,7 @@
 
   .seccion-contacto, .titulo-contacto, .form, .container-contacto, .caja-formuario{
     margin: 5px;
-    width: 1400px;
+    width: 1440px;
     border-radius: 10px;
     text-align: center;
     
@@ -58,7 +58,7 @@
    .container-comentario{
        display: block;
        justify-content: center;
-       width: 1400px;
+       width: 1440px;
    }
    
    footer{
@@ -77,6 +77,10 @@
         padding: 10px;
     }
 
+    .cabecera{
+    width: 970px;
+    }
+    
     body{
        background-color: rgb(238, 232, 232);
 
@@ -88,6 +92,8 @@
         display: block !important;
        
     }
+
+    
 
     
  /*RESPONSIVE SECCION LUGARES  */
@@ -141,23 +147,24 @@
 
 @media screen and (max-width: 767px) {
 
-    nav, nav ul{
-        padding:0;
 
-    }
-
-    nav ul il {
-        text-align: center;
-        width: 200px;
-    }
     nav il a{
         display: block !important;
+        justify-content: center;
+        
     }
+    .cabecera{
+        width: 767px;
+        
+    }
+
+
     .seccion-principal, .titulo-principal, .titutlo-descripcion, .subtitulo-descripcion2, .btn-titulo {
         display: block;
         justify-content: center;
         text-align: center;
         width: 767px;
+        font-size: 20px;
         
     }
     .btn-titulo {
@@ -172,12 +179,10 @@
 
  .seccion-articulos, .titulo-servicios, .contenedor, .articulos-servicios, .imagenes-articulos, .image-art, .subtitulos-servicios, .parrafo{
     display: flexbox;
-    flex-direction: row;
-    justify-content: space-between;
     width: 180px;
     background-color: rgb(238, 232, 232);
-    font-size: 20px;
-    
+    font-size: 16px;
+
  }
 
   /*RESPONSIVE SECCION BENEFICIOS */
@@ -186,8 +191,8 @@
      width: 200px;
      margin: 10px;
      background-color: rgb(238, 232, 232);
-     font-size: 20px;
-          
+     font-size: 17px;
+
   }
 
   /*RESPONSIVE SECCION FORMULARIO*/
@@ -197,6 +202,7 @@
     width: 767px;
     border-radius: 10px;
     text-align: center;
+    font-size: 18px;
     
   }
    .caja-formuario{
@@ -228,13 +234,12 @@
     }
     nav il a{
         display: block !important;
+        
     }
 
     .menu{
         width: 600px;
-    }
-    nav ul il a{
-        padding: 10px;
+        
     }
 
     body{
@@ -242,11 +247,20 @@
 
     }
 
-    .seccion-principal{
-        width: 300px;
+    .cabecera{
+        width: 600px ;
+
+    }
+
+    .seccion-principal, .titulo-principal, .titutlo-descripcion, .subtitulo-descripcion2{
+        width: 500px;
         padding: 10px;
         display: block !important;
-       
+    }
+    
+    .btn-titulo{
+        width: 200px;
+        margin: 20px;
     }
     
  /*RESPONSIVE SECCION LUGARES  */
@@ -274,26 +288,34 @@
 
   .seccion-contacto, .titulo-contacto, .form, .container-contacto, .caja-formuario{
     margin: 5px;
-    width: 580px;
+    font-size: 15px;
+    width: 570px;
     border-radius: 10px;
     text-align: center;
+
     
   }
    .caja-formuario{
-       width: 400px;
+       width: 300px;
    }
 
    .container-comentario{
        display: block;
        justify-content: center;
-       width: 100px;
+       width: 70px;
+   }
+   .caja-comentario{
+       width: 500px;
+    
    }
 
    footer{
-    width: 600px;
+    width: 500px;
 }
 
 }
+
+/*PANTALLA SMARTPHONE PEQUEÑA */
 
 @media screen and (max-width: 400px) {
     nav, nav ul{
@@ -313,6 +335,10 @@
     }
     nav ul il a{
         padding: 10px;
+    }
+
+    .cabecera{
+        width: 400px ;
     }
 
     body{

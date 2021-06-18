@@ -13,6 +13,7 @@ body{
     width: 1400px;
     height: 625px;
     margin: 20px auto;
+    font-family: 'Noto Sans JP', sans-serif;
 
 }
 
@@ -68,7 +69,7 @@ a:hover {
 }
 
 .btn-titulo:hover{
-        font-size: 15px;
+     font-size: 15px;
     text-decoration: none;
     color: #353535;
     padding: 0 1rem;
@@ -76,6 +77,7 @@ a:hover {
     line-height: 60px;
     height: 60px;
     color: white;
+    
 }
 
 
@@ -107,12 +109,13 @@ a:hover {
     padding: 40px;    
 }
 
+
+
 .btn-titulo {
     background-color: black;
     font-size: 20px;
     color: blanchedalmond;
-    display: flexbox;
-    text-align: center;
+    display: block;
     padding: 5px;
     border-radius: 30px;
     width: 20%;
@@ -151,17 +154,27 @@ a:hover {
 }
 
 .imagenes-articulos{
-    width: 20px;
+    width: 10px;
     padding: 20px ;
 }
 
+
 .imagenes-articulos .image-art{
-    border-radius: 300px;
-    padding: 50px;
+    width: 200px;
+    border-radius: 100px;
+    padding: 10px;
 }
 
 .subtitulos-servicios{
     color: rgb(31, 30, 30);
+
+}
+
+.imagenes-articulos .image-art:hover{
+    background-color: black;
+    justify-content: space-evenly;
+    padding: 0.8px;
+
 
 }
 
@@ -187,8 +200,17 @@ a:hover {
 
 .img-producto{
     justify-content: space-evenly;
-    border-radius: 30px;
-    padding: 20px;
+    padding: 30px;
+    width: 1400px;
+    border-radius: 40px;
+}
+
+.img-producto:hover{
+    background-color: black;
+    justify-content: space-evenly;
+    padding: 0.8px;
+    border-radius: 40px;
+
 }
 
 /*SECCION SOCIOS*/
@@ -202,7 +224,7 @@ a:hover {
 .titulo-contacto{
     text-align: left;
     padding: 20px;
-    color: whitesmoke;
+    color: black;
 }
 
 form{
@@ -234,7 +256,8 @@ form{
 }
 
 .caja-comentario{
-    width: 550px;
+    width: 500px;
+    height: 120px;
     border-radius: 10px;
     text-align: center;
 }
@@ -262,7 +285,6 @@ form{
     font-size: 20px;
     
 }
-
 
 .btn-enviar:hover{
     background-color: khaki;
